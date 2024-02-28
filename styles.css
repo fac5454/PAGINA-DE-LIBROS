@@ -1,0 +1,148 @@
+/*@font-face {
+  font-family: 'myfont';
+  src: url('font/PosterGothicRoundCondATF-Bold.otf') format('otf'),
+       url('font/Lato-Regular.ttf') format('ttf');
+}*/
+
+@font-face {
+  font-family: "myfont";
+  src: url("font/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "myfont";
+  src: url("font/PosterGothicRoundCondATF-Bold.otf");
+  font-weight: bold;
+}
+
+body {
+  font-family: "myfont";
+  display: block;
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(img/siluetas-sitio-construccion.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container2 {
+  background-color: rgba(15, 15, 15, 0.9);
+  color: white;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.corp {
+  display: grid;
+  grid-template-columns:  repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(1px);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+}
+
+.corp img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.corp img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+img {
+  max-width: 700px;
+  height: auto;
+}
+
+.container {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 166, 0);
+  margin-bottom: 60px;
+}
+
+.container {
+  padding: 0px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: black;
+  color: white;
+}
+
+nav ul li.dropdown {
+  position: relative;
+}
+
+nav ul li.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+nav ul li.dropdown .dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+nav ul li.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.foter {
+  background-color: rgba(15, 15, 15, 0.95);
+  padding: 20px;
+  bottom: 0;
+  text-align: center;
+  color: white;
+  margin-top: 60px;
+}
+
+.foter p {
+  margin: 0;
+  padding: 5px;
+  font-family: 'myfont';
+}
+
+.corp a {
+  display: flex;
+  justify-content: center;
+  cursor: default;
+}
+

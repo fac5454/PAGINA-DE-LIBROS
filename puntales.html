@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puntales</title>
+    <link rel="stylesheet" href="puntales.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container2">
+        <img src="img/logo.png" alt="Logo de la empresa" />
+      </div>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="restaurante.html">Inicio</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Facundo</a>
+              <div class="dropdown-content">
+                <a href="#">Servicio 1</a>
+                <a href="#">Servicio 2</a>
+                <a href="#">Servicio 3</a>
+              </div>
+            </li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container-quoter">
+        <h2>Puntales</h2>
+        <div class="picture">
+          <img src="img/compac.jpg" alt="compactadora" />
+        </div>
+        <label for="hrs">Cantidad</label>
+        <input
+          type="number"
+          id="hours"
+          name="hours"
+          placeholder="Ingrese una cantidad"
+        />
+
+        <div class="size">
+          <label>Tamaño</label>
+          <select id="size">
+            <option value="size1">4 metros</option>
+            <option value="size2">6 metros</option>
+          </select>
+        </div>
+        <label for="dia">Dias</label>
+        <input
+          type="number"
+          id="days"
+          name="days"
+          placeholder="Ingrese la cantidad de días"
+        />
+        <div class="button">
+          <button onclick="calcularPrecio()">Calcular</button>
+          <div id="resultado"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="foter">
+      <p>
+        Calle: Blanco Galindo Km 8 1/2 acera norte * Celulares: 70384510 -
+        69439348 - 4589201
+      </p>
+      <p>Email: vision@gmail.com</p>
+      <p>Derechos de autor Copy Right</p>
+    </footer>
+
+    <script src="puntales.js"></script>
+  </body>
+</html>
